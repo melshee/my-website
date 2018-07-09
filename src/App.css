@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+}
+
+.container {
+  margin: 0px;
+  padding: 0px;
+}
+
+.greeting {
+ /* min-height: 300px;
+  min-width: 350px;*/
+  /*display: flex;*/
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.image {
+  max-height: 290px;
+  max-width: 340px;
+  min-height: 270px;
+  min-width: 310px;
+}
+
+.image-box {
+  min-height: 300px;
+  min-width: 350px;
+  max-height: 300px;
+  max-width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*text-align: center;*/
+}
