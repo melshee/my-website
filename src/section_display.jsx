@@ -25,9 +25,9 @@ export default class SectionDisplay extends Component {
       "projects":  "Projects",
       "skills": "Skills", 
       "experience": "Experience", 
-      "gitHub": "GitHub", 
+      "github": "GitHub", 
       "email": "Email",
-      "linkedIn": "LinkedIn"
+      "linkedin": "LinkedIn"
     }
   }
 
@@ -36,14 +36,14 @@ export default class SectionDisplay extends Component {
 
     if(this.props.sectionName == "about-me") {
       content = 
-      <div id="about-me">
+      <div id="about-me-content">
         <p>Currently a Ruby on Rails and React Fullstack Developer looking for full-time employment in the Bay Area.
              I'm an enthusiastic, hard-working team leader who strives to improve herself by working in a challenging and
              engaging environment.</p>
       </div>
     } else if(this.props.sectionName == "resume") {
       content =
-      <div id="resume">
+      <div id="resume-content">
         <button> 
         <a href="/images/Melissa_Sheehan_Resume.docx" download="Melissa_Sheehan_Resume">Resume (.docx)
           {/*<img border="0" src="/images/myw3schoolsimage.jpg" alt="W3Schools" width="104" height="142"/> */}
@@ -57,7 +57,7 @@ export default class SectionDisplay extends Component {
       </div>
     } else if(this.props.sectionName == "projects") {
       content = 
-      <div id="projects">
+      <div id="projects-content">
         <p>KnowYourStudents, Center for Educational Effectiveness</p>
         <p>Description</p>
         <p>Link</p>
@@ -76,44 +76,44 @@ export default class SectionDisplay extends Component {
       </div>
     } else if(this.props.sectionName == "skills") {
       content = 
-      <div id="skills">
-        <img src={reactLogo} alt="React" width="150" height="100"/>
-        <img src={rorLogo} alt="Ruby on Rails" width="150" height="100"/>
-        <img src={cppLogo} alt="C/++" width="150" height="100"/>
-        <img src={javascriptLogo} alt="JavaScript" width="150" height="100"/>
-        <img src={htmlcssLogo} alt="HTML & CSS" width="150" height="100"/>
-        <img src={javaLogo} alt="Java" width="150" height="100"/>
+      <div id="skills-content">
+        <div className="skills-icons"><img src={reactLogo} alt="React" width="150" height="100"/></div>
+        <div className="skills-icons"><img src={rorLogo} alt="Ruby on Rails" width="150" height="100"/></div>
+        <div className="skills-icons"><img src={cppLogo} alt="C/++" width="150" height="100"/></div>
+        <div className="skills-icons"><img src={javascriptLogo} alt="JavaScript" width="150" height="100"/></div>
+        <div className="skills-icons"><img src={htmlcssLogo} alt="HTML & CSS" width="150" height="100"/></div>
+        <div className="skills-icons"><img src={javaLogo} alt="Java" width="150" height="100"/></div>
         <h4>Other Tools</h4>
-        <img src={awsLogo} alt="AWS" width="150" height="100"/>
-        <img src={postgresqlLogo} alt="PostgreSQL" width="150" height="100"/>
-        <img src={pythonLogo} alt="Python" width="150" height="100"/>
-        <img src={dockerLogo} alt="Docker" width="150" height="100"/>
+        <div className="skills-icons"><img src={awsLogo} alt="AWS" width="150" height="100"/></div>
+        <div className="skills-icons"><img src={postgresqlLogo} alt="PostgreSQL" width="150" height="100"/></div>
+        <div className="skills-icons"><img src={pythonLogo} alt="Python" width="150" height="100"/></div>
+        <div className="skills-icons"><img src={dockerLogo} alt="Docker" width="150" height="100"/></div>
       </div>
     } else if(this.props.sectionName == "experience") {
       content =
-        <div id="experience">
+        <div id="experience-content">
           <p>CEE</p>
         </div>
     } else if(this.props.sectionName == "github") {
       content =
-        <div id="github">
+        <div id="github-content">
           <p>https://github.com/melshee</p>
         </div>
     } else if(this.props.sectionName == "email") {
       content = 
-        <div id="email">
+        <div id="email-content">
           <p>msheehan7@gmail.com</p>
         </div>
     } else if(this.props.sectionName == "linkedin") {
       content =
-        <div id="linkedin">
+        <div id="linkedin-content">
           <p>https://www.linkedin.com/in/sheehanmelissa/</p>
         </div>
     }
 
     return (
       <div className="section-display">
-          <h1>{this.sectionIDToName[this.props.sectionName]}</h1>
+          <h1 id={this.props.sectionName} >{this.sectionIDToName[this.props.sectionName]}</h1>
           {content}
       </div>     
     );

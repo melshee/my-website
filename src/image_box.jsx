@@ -25,15 +25,27 @@ export default class ImageBox extends Component {
     };
 
     this.linkToImg = { //to map link to image
-      "About Me": hackDavis,
-      "Resume": canyons,
-      "Projects":  grad,
-      "Skills": skiing, 
-      "Hi! I'm Melissa":  null,
-      "Experience": torreyPines, 
-      "GitHub": pierPic, 
-      "Email": zion,
-      "LinkedIn": sky
+      "about-me": hackDavis,
+      "resume": canyons,
+      "projects":  grad,
+      "skills": skiing, 
+      "greeting":  null,
+      "experience": torreyPines, 
+      "github": pierPic, 
+      "email": zion,
+      "linkedin": sky
+    }
+
+    this.sectionIDToName = { //to map backend name of sections to the "pretty format"
+      "about-me": "About Me",
+      "resume": "Resume",
+      "projects":  "Projects",
+      "skills": "Skills", 
+      "greeting": "Hi! I'm Melissa",
+      "experience": "Experience", 
+      "github": "GitHub", 
+      "email": "Email",
+      "linkedin": "LinkedIn"
     }
   }
 
@@ -56,12 +68,12 @@ export default class ImageBox extends Component {
   render() {
     // console.log(this.linkToImg[this.props.link]);
     var box;
-    var name = <h3 className="name-centered">{this.props.link}</h3>;
-    if(this.props.link !== "Hi! I'm Melissa") {
+    var name = <h3 className="name-centered">{this.sectionIDToName[this.props.link]}</h3>;
+    if(this.props.link !== "greeting") {
       box = 
       <div className="image-box" style={{opacity: this.state.opacity}} onMouseEnter={this.entered} onMouseLeave={this.left}>
         <div className="container">
-          <img src={this.linkToImg[this.props.link]} alt="Logo" className="image"/>
+          <a href={"#"+ this.props.link}> <img src={this.linkToImg[this.props.link]} alt="Logo" className="image"/> </a>
           {this.state.showName ? name : null}
         </div>
       </div>
