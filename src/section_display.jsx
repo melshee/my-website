@@ -44,12 +44,12 @@ export default class SectionDisplay extends Component {
     } else if(this.props.sectionName == "resume") {
       content =
       <div id="resume-content">
-        <button> 
+        <button className="resume-button"> 
         <a href="/images/Melissa_Sheehan_Resume.docx" download="Melissa_Sheehan_Resume">Resume (.docx)
           {/*<img border="0" src="/images/myw3schoolsimage.jpg" alt="W3Schools" width="104" height="142"/> */}
         </a>
         </button>
-        <button> 
+        <button className="resume-button"> 
         <a href="/images/Melissa_Sheehan_Resume.pdf" download="Melissa_Sheehan_Resume">Resume (.pdf)
           {/*<img border="0" src="/images/myw3schoolsimage.jpg" alt="W3Schools" width="104" height="142"/> */}
         </a>
@@ -58,56 +58,77 @@ export default class SectionDisplay extends Component {
     } else if(this.props.sectionName == "projects") {
       content = 
       <div id="projects-content">
-        <p>KnowYourStudents, Center for Educational Effectiveness</p>
-        <p>Description</p>
-        <p>Link</p>
-        <p>CommunityText, Spectra Hackathon</p>
-        <p>Description</p>
-        <p>Link</p>
-        <p>Time2Eat, Cal Hacks – UC Berkeley</p>
-        <p>Description</p>
-        <p>Link</p>
-        <p>Photobooth Website, Web Programming Course</p>
-        <p>Description</p>
-        <p>Link</p>
-        <p>Jaguar Journey, CSUSM Hackathon</p>
-        <p>Description</p>
-        <p>Link</p>
+        <a href="https://devpost.com/software/communitytext"><h5>CommunityText, Spectra Hackathon (won "Best use of mLab")</h5></a>
+        <p>A web application that uses text messages to form semi-anonymous communities based on interests
+        <br />
+        Tools: React, MongoDB, Twilio, Heroku</p>
+
+        <h5>KnowYourStudents, Center for Educational Effectiveness</h5>
+        <p>Data-visualization site that analyzes class demographics to help educators improve their teaching performance
+        <br />
+        Tools: React, Ruby on Rails, jQuery, PostgresSQL, AWS Elastic Beanstalk, D3.js for graphs describing class demographics, Redis for caching</p>
+
+        <a href="https://devpost.com/software/timetoeat"><h5>Time2Eat, Cal Hacks at UC Berkeley</h5></a>
+        <p>Time2Eat provides you with the proper heating times for whatever food you need and it provides you with an amusing video for you to watch in the meantime
+        <br />
+        Tools: Ruby, Ruby on Rails, Heroku</p>
+
+        <h5>Photobooth Website, Web Programming Course</h5>
+        <p>Image uploading site with auto-generated labels for each image
+        <br />
+        Tools: Node.js, Google Vision API for machine learning-generated labels for images, SQLite3 for image database, JavaScript, HTML/CSS</p>
+        
+        <a href="https://devpost.com/software/jaguarjourney"><h5>Jaguar Journey, CSUSM Hackathon</h5></a>
+        <p>Educational online game (rendition of Oregon Trails) where you decide the fate of a jaguar and learn about its ecosystem
+        <br />
+        Tools: HTML, CSS</p>
       </div>
     } else if(this.props.sectionName == "skills") {
       content = 
       <div id="skills-content">
-        <div className="skills-icons"><img src={reactLogo} alt="React" width="150" height="100"/></div>
-        <div className="skills-icons"><img src={rorLogo} alt="Ruby on Rails" width="150" height="100"/></div>
-        <div className="skills-icons"><img src={cppLogo} alt="C/++" width="150" height="100"/></div>
-        <div className="skills-icons"><img src={javascriptLogo} alt="JavaScript" width="150" height="100"/></div>
-        <div className="skills-icons"><img src={htmlcssLogo} alt="HTML & CSS" width="150" height="100"/></div>
-        <div className="skills-icons"><img src={javaLogo} alt="Java" width="150" height="100"/></div>
-        <h4>Other Tools</h4>
-        <div className="skills-icons"><img src={awsLogo} alt="AWS" width="150" height="100"/></div>
-        <div className="skills-icons"><img src={postgresqlLogo} alt="PostgreSQL" width="150" height="100"/></div>
-        <div className="skills-icons"><img src={pythonLogo} alt="Python" width="150" height="100"/></div>
-        <div className="skills-icons"><img src={dockerLogo} alt="Docker" width="150" height="100"/></div>
+        <h4>1yr+ experience with:</h4>
+        <span><img src={reactLogo} alt="React" className="skills-icons"/></span>
+        <span><img src={rorLogo} alt="Ruby on Rails" className="skills-icons"/></span>
+        <span><img src={cppLogo} alt="C/++" className="skills-icons"/></span>
+        <span><img src={javascriptLogo} alt="JavaScript" className="skills-icons"/></span>
+        <span><img src={htmlcssLogo} alt="HTML & CSS" className="skills-icons"/></span>
+        <span><img src={javaLogo} alt="Java" className="skills-icons"/></span>
+        <h4>Familiar with:</h4>
+        <span><img src={awsLogo} alt="AWS" className="skills-icons"/></span>
+        <span><img src={postgresqlLogo} alt="PostgreSQL" className="skills-icons"/></span>
+        <span><img src={pythonLogo} alt="Python" className="skills-icons"/></span>
       </div>
     } else if(this.props.sectionName == "experience") {
       content =
         <div id="experience-content">
-          <p>CEE</p>
+          <a href="https://cee.ucdavis.edu/"><h5>Web Developer @ Center for Educational Effectiveness</h5></a>
+          <p>Revamping front end into React components, implementing 12+ new features, and refactoring
+          legacy code in a fast-paced startup environment</p>
+
+          <a href="http://cs4k.org/"><h5>Tutor @ Computer Science 4 Kids</h5></a>
+          <p>Mentored high-school students throughout their year-long course in Python</p>
+
+          <a href="https://www.idtech.com/"><h5>Instructor @ iD Tech </h5></a>
+          <p>Led instruction of and supervised students (ages 7-17) the fundamentals of C++ and JavaScript</p>
+
+          <a href="https://www.xifin.com/"><h5>Business Intelligence Engineer Intern @ Xifin </h5></a>
+          <p>Maintained, tested, and documented software updates involving critical healthcare data </p>
         </div>
     } else if(this.props.sectionName == "github") {
       content =
         <div id="github-content">
-          <p>https://github.com/melshee</p>
+          <a href="https://github.com/melshee">Check out my GitHub</a>
+          {/*<p>https://github.com/melshee</p>*/}
         </div>
     } else if(this.props.sectionName == "email") {
       content = 
         <div id="email-content">
-          <p>msheehan7@gmail.com</p>
+          <p>Contact me at <a href="mailto:mxsheehan7@gmail.com?Subject=Hello!" target="_top">msheehan7@gmail.com</a> </p>
         </div>
     } else if(this.props.sectionName == "linkedin") {
       content =
         <div id="linkedin-content">
-          <p>https://www.linkedin.com/in/sheehanmelissa/</p>
+          <a href="https://www.linkedin.com/in/sheehanmelissa">Connect with me on LinkedIn</a>
         </div>
     }
 

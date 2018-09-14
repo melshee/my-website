@@ -8,6 +8,13 @@
   background-size: cover;
 }
 
+.resume-button {
+  margin: 5px;
+  border-radius: 8px;
+  /*box-shadow: 1;*/
+
+}
+
 .greeting {
   display: flex;
   align-items: center;
@@ -52,15 +59,28 @@
     transform: translate(-50%, -50%);
 }
 
+#projects-content {
+  text-align: left;
+}
+
+#experience-content {
+  text-align: left;
+}
+
 .section-display {
-  min-height: 300px;
-  border-color: #0099ff;
+  min-height: 130px;
+/*  border-color: #0099ff;
   border-radius: 5px;
   border-style: solid;
-  border-width: 2px;
+  border-width: 2px;*/
   margin: 15px 70px;
 }
 
 .skills-icons {
   object-fit: scale-down;
+  min-width: 90px;
+  min-height: 80px;
+  max-width: 90px;
+  max-height: 80px;
+  margin: 2px;
 }
