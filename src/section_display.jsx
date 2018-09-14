@@ -11,6 +11,9 @@ import postgresqlLogo from './images/logos/postgresql.png';
 import pythonLogo from './images/logos/python.png';
 import dockerLogo from './images/logos/docker.png';
 
+import resumePDF from './images/Melissa_Sheehan_Resume.pdf'
+import resumeDOCX from './images/Melissa_Sheehan_Resume.docx'
+
 export default class SectionDisplay extends Component {
   constructor(props){
     super(props);
@@ -37,22 +40,23 @@ export default class SectionDisplay extends Component {
     if(this.props.sectionName == "about-me") {
       content = 
       <div id="about-me-content">
-        <p>Currently a Ruby on Rails and React Fullstack Developer looking for full-time employment in the Bay Area.
-             I'm an enthusiastic, hard-working team leader who strives to improve herself by working in a challenging and
-             engaging environment.</p>
+        <p>
+        Currently a React and Ruby on Rails Developer looking for full-time employment in the Bay Area
+        <br/>
+        I'm an enthusiastic, hard-working team leader who strives to improve herself by working in challenging and
+        collaborative environments
+        <br/>
+        If you're reading this you scrolled down or clicked on a link to get here so keep on going to learn more about me! 
+        </p>
       </div>
     } else if(this.props.sectionName == "resume") {
       content =
       <div id="resume-content">
         <button className="resume-button"> 
-        <a href="/images/Melissa_Sheehan_Resume.docx" download="Melissa_Sheehan_Resume">Resume (.docx)
-          {/*<img border="0" src="/images/myw3schoolsimage.jpg" alt="W3Schools" width="104" height="142"/> */}
-        </a>
+          <a href={resumePDF} download>Resume (.pdf)</a>
         </button>
         <button className="resume-button"> 
-        <a href="/images/Melissa_Sheehan_Resume.pdf" download="Melissa_Sheehan_Resume">Resume (.pdf)
-          {/*<img border="0" src="/images/myw3schoolsimage.jpg" alt="W3Schools" width="104" height="142"/> */}
-        </a>
+          <a href={resumeDOCX} download>Resume (.docx)</a>
         </button>
       </div>
     } else if(this.props.sectionName == "projects") {
