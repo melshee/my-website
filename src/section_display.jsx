@@ -122,12 +122,11 @@ export default class SectionDisplay extends Component {
       content =
         <div id="github-content">
           <a href="https://github.com/melshee">Check out my GitHub</a>
-          {/*<p>https://github.com/melshee</p>*/}
         </div>
     } else if(this.props.sectionName == "email") {
       content = 
         <div id="email-content">
-          <p>Contact me at <a href="mailto:mxsheehan7@gmail.com?Subject=Hello!" target="_top">msheehan7@gmail.com</a> </p>
+          <p>Contact me at <a href="mailto:mxsheehan7@gmail.com?Subject=Hello!" target="_top">mxsheehan7@gmail.com</a> </p>
         </div>
     } else if(this.props.sectionName == "linkedin") {
       content =
