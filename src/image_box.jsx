@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import pierPic from './images/pierPic.jpg';
 import grad from './images/grad.jpg';
-import canyons from './images/canyons.jpg';
+// import canyons from './images/canyons.jpg';
 import torreyPines from './images/torreyPines.jpg';
 import skiing from './images/skiing.jpg';
 import hackDavis from './images/hackDavis.jpg';
 import zion from './images/zion.jpg';
 import techCrunch from './images/techCrunch.jpg';
+// import dreamforce from './images/dreamforce.jpg';
+import dreamforceSign from './images/dreamforceSign.jpg';
 
 export default class ImageBox extends Component {
   constructor(props){
@@ -21,7 +23,7 @@ export default class ImageBox extends Component {
 
     this.linkToImg = { //to map link to image
       "about-me": hackDavis,
-      "resume": canyons,
+      "resume": dreamforceSign,
       "projects":  grad,
       "skills": skiing, 
       "greeting":  null,
@@ -54,7 +56,7 @@ export default class ImageBox extends Component {
   left() {
     this.setState({
       opacity: 1,
-      showName: false
+      showName: false 
     })
   }
 
@@ -73,7 +75,7 @@ export default class ImageBox extends Component {
     } else {
       box =
       <div className="greeting">
-        <p><h2>Hi! I'm Melissa</h2>(Hover over the images to learn more about me)</p>
+        <span><h2>Hi! I'm Melissa</h2><p>(Hover over the images to learn more about me)</p></span>
       </div>
     }
 

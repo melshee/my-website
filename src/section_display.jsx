@@ -9,7 +9,6 @@ import javaLogo from './images/logos/java.png';
 import awsLogo from './images/logos/aws.png';
 import postgresqlLogo from './images/logos/postgresql.png';
 import pythonLogo from './images/logos/python.png';
-import dockerLogo from './images/logos/docker.png';
 
 import resumePDF from './images/Melissa_Sheehan_Resume.pdf'
 import resumeDOCX from './images/Melissa_Sheehan_Resume.docx'
@@ -37,7 +36,7 @@ export default class SectionDisplay extends Component {
   render() {
     let content = "content"
 
-    if(this.props.sectionName == "about-me") {
+    if(this.props.sectionName === "about-me") {
       content = 
       <div id="about-me-content">
         <p>
@@ -49,7 +48,7 @@ export default class SectionDisplay extends Component {
         If you're reading this you scrolled down or clicked on a link to get here so keep on going to learn more about me! 
         </p>
       </div>
-    } else if(this.props.sectionName == "resume") {
+    } else if(this.props.sectionName === "resume") {
       content =
       <div id="resume-content">
         <button className="resume-button"> 
@@ -59,7 +58,7 @@ export default class SectionDisplay extends Component {
           <a href={resumeDOCX} download>Resume (.docx)</a>
         </button>
       </div>
-    } else if(this.props.sectionName == "projects") {
+    } else if(this.props.sectionName === "projects") {
       content = 
       <div id="projects-content">
         <a href="https://devpost.com/software/communitytext"><h5>CommunityText, Spectra Hackathon (won "Best use of mLab")</h5></a>
@@ -87,7 +86,7 @@ export default class SectionDisplay extends Component {
         <br />
         Tools: HTML, CSS</p>
       </div>
-    } else if(this.props.sectionName == "skills") {
+    } else if(this.props.sectionName === "skills") {
       content = 
       <div id="skills-content">
         <h4>1yr+ experience with:</h4>
@@ -102,7 +101,7 @@ export default class SectionDisplay extends Component {
         <span><img src={postgresqlLogo} alt="PostgreSQL" className="skills-icons"/></span>
         <span><img src={pythonLogo} alt="Python" className="skills-icons"/></span>
       </div>
-    } else if(this.props.sectionName == "experience") {
+    } else if(this.props.sectionName === "experience") {
       content =
         <div id="experience-content">
           <a href="https://cee.ucdavis.edu/"><h5>Web Developer @ Center for Educational Effectiveness</h5></a>
@@ -118,17 +117,17 @@ export default class SectionDisplay extends Component {
           <a href="https://www.xifin.com/"><h5>Business Intelligence Engineer Intern @ Xifin </h5></a>
           <p>Maintained, tested, and documented software updates involving critical healthcare data </p>
         </div>
-    } else if(this.props.sectionName == "github") {
+    } else if(this.props.sectionName === "github") {
       content =
         <div id="github-content">
           <a href="https://github.com/melshee">Check out my GitHub</a>
         </div>
-    } else if(this.props.sectionName == "email") {
+    } else if(this.props.sectionName === "email") {
       content = 
         <div id="email-content">
           <p>Contact me at <a href="mailto:mxsheehan7@gmail.com?Subject=Hello!" target="_top">mxsheehan7@gmail.com</a> </p>
         </div>
-    } else if(this.props.sectionName == "linkedin") {
+    } else if(this.props.sectionName === "linkedin") {
       content =
         <div id="linkedin-content">
           <a href="https://www.linkedin.com/in/sheehanmelissa">Connect with me on LinkedIn</a>
