@@ -40,7 +40,9 @@ export default class SectionDisplay extends Component {
       content = 
       <div id="about-me-content">
         <p>
-        Currently a React and Ruby on Rails Developer looking for full-time employment in the Bay Area
+        I'm an enthusiastic learner and full stack developer looking to challenge myself in an engaging and collaborative environment.
+        I’ve worked predominantly with Ruby on Rails and React but am interested in gaining more experience with other exciting languages like Go and Python.
+        I'm looking for a team that values mentorship and encourages exploration of career interests.
         <br/>
         I'm an enthusiastic, hard-working team leader who strives to improve herself by working in challenging and
         collaborative environments
