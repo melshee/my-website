@@ -540,7 +540,7 @@
     "mem": "^5.1.1",
     "memory-fs": "^0.4.1",
     "merge": "^1.2.1",
-    "merge-deep": "^3.0.2",
+    "merge-deep": "^3.0.3",
     "merge-descriptors": "^1.0.1",
     "merge-stream": "^2.0.0",
     "merge2": "^1.2.4",
