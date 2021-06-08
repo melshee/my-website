@@ -184,7 +184,7 @@
     "css-select-base-adapter": "^0.1.1",
     "css-tree": "^1.0.0-alpha.33",
     "css-unit-converter": "^1.1.1",
-    "css-what": "^2.1.0",
+    "css-what": "^5.0.1",
     "cssdb": "^4.4.0",
     "cssesc": "^2.0.0",
     "cssnano": "^4.1.10",
