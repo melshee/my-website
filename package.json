@@ -666,7 +666,7 @@
     "popper.js": "^1.15.0",
     "portfinder": "^1.0.13",
     "posix-character-classes": "^0.1.1",
-    "postcss": "^7.0.17",
+    "postcss": "^7.0.36",
     "postcss-attribute-case-insensitive": "^4.0.1",
     "postcss-browser-comments": "^2.0.0",
     "postcss-calc": "^7.0.1",
