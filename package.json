@@ -909,7 +909,7 @@
     "timers-browserify": "^2.0.10",
     "timsort": "^0.3.0",
     "tmp": "^0.0.33",
-    "tmpl": "^1.0.4",
+    "tmpl": "^1.0.5",
     "to-arraybuffer": "^1.0.1",
     "to-fast-properties": "^2.0.0",
     "to-object-path": "^0.3.0",
