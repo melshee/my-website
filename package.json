@@ -314,7 +314,7 @@
     "flatted": "^2.0.1",
     "flatten": "^1.0.2",
     "flush-write-stream": "^1.1.1",
-    "follow-redirects": "^1.5.1",
+    "follow-redirects": "^1.14.8",
     "for-in": "^1.0.2",
     "for-own": "^0.1.5",
     "foreach": "^2.0.5",
