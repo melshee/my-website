@@ -844,7 +844,7 @@
     "shallow-clone": "^3.0.1",
     "shebang-command": "^1.2.0",
     "shebang-regex": "^1.0.0",
-    "shell-quote": "^1.6.1",
+    "shell-quote": "^1.7.3",
     "shellwords": "^0.1.1",
     "signal-exit": "^3.0.2",
     "simple-swizzle": "^0.2.2",
