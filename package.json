@@ -830,7 +830,7 @@
     "schema-utils": "^1.0.0",
     "select-hose": "^2.0.0",
     "selfsigned": "^1.10.3",
-    "semver": "^5.7.1",
+    "semver": "^7.5.2",
     "send": "^0.17.1",
     "serialize-javascript": "^1.8.0",
     "serve-index": "^1.9.1",
